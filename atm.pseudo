@@ -1,8 +1,23 @@
-INITIALIZE balance = 1000 // Kullanıcının başlangıç bakiyesi
-INITIALIZE transaction_history = [] // İşlem geçmişini tutan liste
+// Problem Tanımı
+// Bir banka, müşterilerinin hesap bakiyelerini görüntüleyebileceği, 
+// para yatırabileceği ve çekebileceği, ayrıca işlem geçmişini görüntüleyebileceği
+//  basit bir ATM sistemi geliştirmek istiyor. Sistem, yanlış girişlerde 
+//  kullanıcıyı bilgilendirmeli ve kullanıcı güvenli bir şekilde çıkış yapabilmelidir.
+
+// Hedefler
+// Kullanıcıların hesap bakiyesini görüntüleyebilmesi.
+// Kullanıcıların para yatırabilmesi.
+// Kullanıcıların para çekebilmesi (yeterli bakiye kontrolü yapılmalı).
+// Kullanıcıların işlem geçmişini görüntüleyebilmesi.
+// Kullanıcıların sistemden güvenli bir şekilde çıkabilmesi.
+
+
+
+balance = 1000 // Kullanıcının başlangıç bakiyesi
+transaction_history = [] // İşlem geçmişini tutan liste
 
 function ATMSystem()
-    while TRUE:
+    while True:
         print("ATM Sistemine Hoş Geldiniz") 
         print("1: Bakiye Görüntüle") 
         print( "2: Para Yatır")
