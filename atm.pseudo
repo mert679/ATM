@@ -1,0 +1,38 @@
+INITIALIZE balance = 1000 // Kullanıcının başlangıç bakiyesi
+INITIALIZE transaction_history = [] // İşlem geçmişini tutan liste
+
+function ATMSystem()
+    while TRUE:
+        print("ATM Sistemine Hoş Geldiniz") 
+        print("1: Bakiye Görüntüle") 
+        print( "2: Para Yatır")
+        print("3: Para Çek") 
+        print("4: İşlem Geçmişini Görüntüle") 
+        print("5: Çıkış") 
+        choice = input("İşlem Seçiniz: ") 
+
+        if choice == 1:
+            print( "Mevcut Bakiyeniz: ", balance)
+
+        else if choice == 2:
+          
+            deposit_amount = input("Ne kadar para yatırmak istiyorsunuz?") 
+            
+
+        else if choice == 3:
+        
+            withdraw_amount = input("Ne kadar para çekmek istiyorsunuz?") 
+            
+
+        else if choice == 4:
+            print("İşlem Geçmişiniz:") 
+          
+
+        else if choice == 5:
+            print("ATM Sisteminden Çıkılıyor. İyi Günler!") 
+            break
+
+        else:
+            print("Geçersiz seçim yaptınız. Lütfen tekrar deneyiniz.") 
+    end loop
+end function
